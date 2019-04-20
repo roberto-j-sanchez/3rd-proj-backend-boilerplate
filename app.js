@@ -85,5 +85,8 @@ app.use('/', index);
 
 app.use('/api', require("./routes/auth-routes.js"));
 
+app.use('/api', require('./routes/phone-routes'));
+
+app.use('/api', require('./routes/file-upload-routes'));
 
 module.exports = app;
